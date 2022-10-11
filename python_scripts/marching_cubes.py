@@ -11,7 +11,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--in_vox', type=str, required=True, help="filename of input vox file")
 parser.add_argument('--out_ply', type=str, required=True, help="filename of output ply file")
 parser.add_argument('--iso', type=float, default=0.0, help="iso surface value")
-parser.add_argument('--smooth', action="store_tru", default=False, help="do marching cubes smoothing?")
+parser.add_argument('--smooth', action="store_true", default=False, help="do marching cubes smoothing?")
 
 
 def save_as_ply(filename, verts, faces, color=None):
